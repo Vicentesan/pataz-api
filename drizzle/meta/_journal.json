@@ -8,6 +8,13 @@
       "when": 1736102452680,
       "tag": "20250105184052_init_db_structure",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1736114052697,
+      "tag": "20250105215412_base_pataz_db_structure",
+      "breakpoints": true
     }
   ]
 }
