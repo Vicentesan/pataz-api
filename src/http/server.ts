@@ -34,8 +34,8 @@ app.setErrorHandler(errorHandler)
 app.register(fastifySwagger, {
   openapi: {
     info: {
-      title: 'Template | API Specs',
-      description: 'API documentation for Template',
+      title: 'Pataz | API Specs',
+      description: 'API documentation for Pataz',
       version: '0.0.0',
     },
     components: {

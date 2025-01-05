@@ -1,5 +1,5 @@
 {
-  "name": "@template/api",
+  "name": "@pataz/api",
   "version": "0.0.0",
   "scripts": {
     "dev": "bun --watch src/http/server.ts",
