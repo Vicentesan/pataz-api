@@ -11,7 +11,6 @@ import {
   varchar,
 } from 'drizzle-orm/pg-core'
 
-import { adoptionPost } from './adoption-post'
 import { organizationMembers } from './organization-members'
 import { organizations } from './organizations'
 import { owners } from './owner'
@@ -66,7 +65,6 @@ export const users = pgTable(
     emailIdx: index('users_email_idx').on(table.email),
     providerIdIdx: index('users_provider_id_idx').on(table.providerId),
     phoneNumberIdx: index('users_phone_number_idx').on(table.phoneNumber),
-    // Composite index for auth
     authIdx: index('users_auth_idx').on(table.provider, table.providerId),
   }),
 )
@@ -74,6 +72,5 @@ export const users = pgTable(
 export const usersRelations = relations(users, ({ many }) => ({
   organizations: many(organizations),
   organizationMembers: many(organizationMembers),
-  adoptionPosts: many(adoptionPost),
   owns: many(owners),
 }))

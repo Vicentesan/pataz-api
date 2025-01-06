@@ -29,6 +29,13 @@
       "when": 1736186576130,
       "tag": "20250106180256_add_media_costs_indexes_and_schema_improvements",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1736196947188,
+      "tag": "20250106205547_remove_redundant_owner_id_from_adoption_posts",
+      "breakpoints": true
     }
   ]
 }
